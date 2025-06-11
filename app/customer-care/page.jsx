@@ -76,16 +76,16 @@ const CustomerCare = () => {
         </div>
         <div className={`col-span-2 max-lg:row-start-1 lg:col-span-1`}>
           <Image
-            src={`/images/cc.jpg`}
+            src={`/images/slika11.jpg`}
             alt={`Alesari Customer Care`}
             width={0}
             height={0}
             sizes={`100vw`}
             className={`w-full`}
           />
-          <br/>
-            <Image
-            src={`/images/al.jpg`}
+          <br />
+          <Image
+            src={`/images/slika14.jpg`}
             alt={`Alesari Customer Care`}
             width={0}
             height={0}

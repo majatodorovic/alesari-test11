@@ -126,9 +126,9 @@ export const BasicData = ({ slug, children }) => {
                       key={`gallery-image-${i}`}
                       className={`relative w-full overflow-hidden`}
                     >
-                    <video
+                      <video
                         data-aos="zoom-in"
-                        src="/shoes/alesaribridal.mp4"
+                        src="/shoes/alesaribridal2.mp4"
                         autoPlay
                         muted
                         loop
