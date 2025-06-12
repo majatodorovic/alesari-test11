@@ -46,7 +46,7 @@ export const Designer = () => {
           <div className={`col-span-2 max-lg:row-start-1 lg:col-span-1`}>
             <Image
               data-aos={`fade-left`}
-              src={`/designer/slika12.jpg`}
+              src={`/designer/designer.jpg`}
               alt={name}
               className={`m-auto h-auto w-full`}
               width={0}

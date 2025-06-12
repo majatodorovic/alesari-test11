@@ -18,7 +18,7 @@ export const Hero = () => {
   return (
     <Layout className="mt-5 overflow-hidden lg:mt-20">
       <Image
-        src="/shoes/slika16.jpg"
+        src="/shoes/alesari-our-story-shoes-unique-1.jpg"
         alt="Alesari shoes"
         width={0}
         height={0}
@@ -94,7 +94,7 @@ export const Hero = () => {
         <div className="col-span-2 max-lg:row-start-1 lg:col-span-1">
           <Image
             data-aos="fade-up"
-            src="/shoes/slika13.jpg"
+            src="/shoes/alesari_nova.jpg"
             alt="Alesari shoes"
             width={0}
             height={0}

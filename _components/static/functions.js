@@ -109,38 +109,56 @@ export const BasicData = ({ slug, children }) => {
             />
           </div>
           <div
-            data-aos={`fade-down`}
-            className={`${gallery && gallery?.length === 0 ? "col-span-2" : "col-span-2 lg:col-span-1"}`}
+  data-aos={`fade-down`}
+  className={`${
+    gallery && gallery?.length === 0 ? "col-span-2" : "col-span-2 lg:col-span-1"
+  }`}
+>
+  {is_bridal ? (
+    // Video samo za alesari-bridal-couture
+    <div className="relative w-full overflow-hidden">
+      <video
+        className="w-full h-auto"
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="auto"
+      >
+        <source src="/shoes/alesaribridal3.mp4" type="video/mp4" />
+       
+      </video>
+    </div>
+  ) : (
+    gallery &&
+    gallery?.length > 0 && (
+      <Swiper
+        className={`categoryImageSwiper !w-full`}
+        modules={[Scrollbar]}
+        scrollbar={{
+          draggable: true,
+        }}
+      >
+        {gallery.map(({ image }, i) => (
+          <SwiperSlide
+            key={`gallery-image-${i}`}
+            className={`relative w-full overflow-hidden`}
           >
-            {gallery && gallery?.length > 0 && (
-              <Swiper
-                className={`categoryImageSwiper !w-full`}
-                modules={[Scrollbar]}
-                scrollbar={{
-                  draggable: true,
-                }}
-              >
-                {gallery.map(({ image }, i) => {
-                  return (
-                    <SwiperSlide
-                      key={`gallery-image-${i}`}
-                      className={`relative w-full overflow-hidden`}
-                    >
-                      <video
-                        data-aos="zoom-in"
-                        src="/shoes/alesaribridal2.mp4"
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        className="m-auto w-full"
-                      ></video>
-                    </SwiperSlide>
-                  );
-                })}
-              </Swiper>
-            )}
-          </div>
+            <Image
+              src={image}
+              alt={name}
+              className={`m-auto h-auto w-full`}
+              width={0}
+              height={0}
+              sizes={`100vw`}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    )
+  )}
+</div>
+
         </div>
         {children}
 
