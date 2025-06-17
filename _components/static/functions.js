@@ -80,11 +80,10 @@ export const BasicData = ({ slug, children }) => {
           <Image
             src="/shoes/26.jpg" // ← zameni putanju ako treba
             alt={name}
-            className="w-full h-auto"
-            width={1920}
-            height={1080}
+            className="w-full"
+            width={0}
             quality={100}
-         
+            height={0}
             sizes="100vw"
             priority
           />
