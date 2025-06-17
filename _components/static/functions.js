@@ -76,16 +76,30 @@ export const BasicData = ({ slug, children }) => {
 
     return (
       <div className={``}>
-        {image && (
+        {is_made_for_you ? (
           <Image
-            src={image}
+            src="/shoes/26.jpg" // ← zameni putanju ako treba
             alt={name}
-            className={`w-full`}
-            width={0}
+            className="w-full h-auto"
+            width={1920}
+            height={1080}
             quality={100}
-            height={0}
-            sizes={`100vw`}
+         
+            sizes="100vw"
+            priority
           />
+        ) : (
+          image && (
+            <Image
+              src={image}
+              alt={name}
+              className="w-full"
+              width={0}
+              quality={100}
+              height={0}
+              sizes="100vw"
+            />
+          )
         )}
         <div className={`mt-10 grid grid-cols-2 gap-10 `}>
           <div
@@ -123,7 +137,6 @@ export const BasicData = ({ slug, children }) => {
                   data-aos="zoom-in"
                   src="/shoes/alesaribridal3.mp4"
                   autoPlay
-                  muted
                   loop
                   playsInline
                   className="m-auto w-full"

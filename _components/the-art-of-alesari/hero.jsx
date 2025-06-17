@@ -118,7 +118,6 @@ export const Hero = () => {
             data-aos="zoom-in"
             src="/shoes/alesarifinal.mp4"
             autoPlay
-            muted
             loop
             playsInline
             className="w-full"

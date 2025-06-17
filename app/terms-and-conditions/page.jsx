@@ -19,7 +19,7 @@ const TermsAndConditions = () => {
         Address: Braće Ribnikar 25a, Novi Sad, Serbia
       </p>
       <p className={`mt-3 text-[1.1rem]`}>Email: info@alesari.com</p>
-      <p className={`mt-3 text-[1.1rem]`}>Contact phone: +361 63 445 466</p>
+      <p className={`mt-3 text-[1.1rem]`}>Contact phone: +381 63 445 466</p>
       <p className={`mt-3 text-[1.1rem]`}>Registration number: 64280244</p>
       <p className={`mt-3 text-[1.1rem]`}>Tax ID: 109579120</p>
       <p className={`mt-3 text-[1.1rem]`}>Area of activity: Manufacturer</p>
@@ -160,7 +160,7 @@ const TermsAndConditions = () => {
         website constitutes acceptance of the revised terms.
       </p>
       <h3 className={`mt-7 text-[1.3rem] font-bold`}>
-        18. Porcelain Flow er Disclaim er
+        18. Porcelain Flower Disclaimer
       </h3>
       <p className={`mt-3 text-[1.1rem]`}>
         Each Alesari heel is adorned with a handcrafted porcelain flower,
