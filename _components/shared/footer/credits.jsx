@@ -10,7 +10,10 @@ export const Credits = () => {
       >
         <p className={`font-sans text-base text-white max-sm:text-center`}>
           © {new Date().getFullYear()} Alesari.com | All rights reserved.
-          Powered by Croonus Technologies
+          Powered by{" "}
+          <a target={`_blank`} href={`https://www.croonus.com`}>
+            Croonus Technologies
+          </a>
         </p>
         <div className={`flex flex-col max-sm:mt-2 `}>
           <div className={`items-center py-1`}>
