@@ -101,15 +101,15 @@ export const OrderItemsInfo = ({ order }) => {
           Vendor Information
         </h1>
         <p className={`mt-2`}>
-          Name:
+          Name: Bratscher Shop
           <span className={`font-semibold`}> {process.env.NAME}</span>
         </p>
         <p className={`mt-2`}>
-          Tax ID:
+          Tax ID: 109579120
           <span className={`font-semibold`}>{process.env.PIB}</span>
         </p>
         <p className={`mt-2`}>
-          Address:
+          Address: Braće Ribnikar 25a, Novi Sad, Serbia
           <span className={`font-semibold`}>{process.env.ADDRESS}</span>
         </p>
       </div>

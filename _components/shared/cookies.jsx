@@ -9,9 +9,9 @@ export const CookieAlert = () => {
   let cookiesExist = false;
   useEffect(() => {
     const isAllowedCookie = Cookies.get("cookiesAllowed");
-    if (isAllowedCookie) cookiesExist = true;
-    setCookiesAllowed(cookiesExist);
-  }, [cookiesAllowed, cookiesExist]);
+    setCookiesAllowed(!!isAllowedCookie); // Postavi true ako cookie postoji
+  }, []);
+  
 
   return (
     <>
